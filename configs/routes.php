@@ -32,7 +32,12 @@ switch(ROUTE){
         $mainController->logout();
     break;
 
-    // Si aucune des URL précédentes ne match, c'est la page qui sera appelée par défaut
+    // Route de la page de profil
+    case '/mon-profil/';
+        $mainController->profil();
+    break;
+
+    // Si aucune des URL précédente ne match, c'est la page qui sera appelée par défaut
     default:
         $mainController->page404();
     break;
