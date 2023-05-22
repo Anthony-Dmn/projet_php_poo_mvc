@@ -12,7 +12,7 @@ use PDO;
 class UserManager{
 
     /**
-     * Stockage dans cet attribut d'uns instance de PDO de connexion active à la base de données
+     * Stockage dans cet attribut d'une instance de PDO de connexion active à la base de données
      */
     private PDO $db;
 
@@ -34,7 +34,7 @@ class UserManager{
      */
     public function __construct()
     {
-        $this->db = connectedDb();
+        $this->db = connectDb();
     }
 
 

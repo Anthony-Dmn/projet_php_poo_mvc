@@ -20,7 +20,6 @@ class User{
     /**
      * Getters/setters
      */
-
     public function getId(): int
     {
         return $this->id;
